@@ -1,0 +1,416 @@
+:root {
+    --primary-color: #3a3a3a;
+    --secondary-color: #298a32;
+    --bg-btn-color: #56a35d;
+    --overlay-color: rgba(32, 32, 32, 0.562);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* Navigation Styling */
+
+nav {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    margin-top: 10px;
+}
+
+.nav-logo img {
+    width: 100%;
+    max-width: 130px;
+}
+
+.hamburger {
+    background: transparent;
+    border: 0;
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-menu li {
+    padding: 0 16px;
+}
+
+.nav-menu li .nav-menu-link {
+    color: var(--secondary-color);
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+.nav-menu li a:hover {
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+/* Section 1 */
+
+.section-1 {
+    margin: 2rem 0;
+}
+
+.section-1 .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container.banner-col-1 {
+    padding: 20px;
+}
+
+.banner-col-1 .heading {
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.banner-col-1 p {
+    color: #000;
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.banner-col-1 .btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 1.1rem;
+}
+
+.banner-col-1 .btn:hover {
+    background-color: ;
+}
+
+.banner-col-2 img {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Section 2 */
+
+.section-2 {
+    background: url(../img/work.jpg) no-repeat bottom center/cover;
+    position: relative;
+    height: 600px;
+}
+
+.section-2-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 860px;
+    padding: 5rem 0;
+}
+
+.section-2-inner h2 {
+    color: #fff;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.section-2-inner p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+}
+
+/* About Styling */
+
+#about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+#about .box {
+    padding: 2em;
+    color: var(--primary-color);
+}
+
+.box .content-title {
+    font-size: 30px;
+}
+
+.box p {
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+/* SEction 3 */
+
+.section-3 {
+    background-color: var(--primary-color);
+    padding: 2em 1em 1em;
+}
+
+.section-3-inner h4 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 0;
+}
+
+.section-3-inner h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 42px;
+    line-height: 1.3;
+    font-weight: bolder;
+}
+
+.section-3 .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.card-content {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.card-title {
+    margin-bottom: 13px;
+}
+
+.card-content p {
+    line-height: 1.2;
+}
+
+/* Footer  Styling*/
+
+footer {
+    background-color: #fff;
+    color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.footer-logo {
+    width: 100%;
+    max-width: 200px;
+}
+
+.fa-google-plus-square {
+    color: #d23f31;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-youtube-square {
+    color: #ff0000;
+}
+
+.social-links a i {
+    font-size: 20px;
+}
+
+footer .container h3 {
+    margin-bottom: 0.7rem;
+}
+
+.footer-links a {
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+footer .container a:hover {
+    color: var(--secondary-color);
+}
+
+/* Email Form  */
+
+.footer-form-container p {
+    padding: 0;
+}
+
+.email-form {
+    width: 100%;
+    display: inline-block;
+    background-color: #eee;
+    position: relative;
+    border-radius: 20px;
+    line-height: 0;
+    margin-top: 1rem;
+}
+
+.email-form .form-control {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: #000;
+    background-color: transparent;
+    font-family: inherit;
+    margin: 0;
+    padding: 0 3rem 0 1.5rem;
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+}
+
+.email-form .submit {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+}
+
+/* Utilities */
+
+h1, h2, h3, h4 {
+    line-height: 1.3;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+/* Mobile Responsive */
+
+@media(max-width: 767px) {
+    nav {
+        width: 100%;
+    }
+    .section-1 .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .section-1 .container div:first-child {
+        order: 2;
+    }
+    .section-1 .container div:last-child {
+        order: -1;
+    }
+    #about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    #about img:first-child {
+        order: 2;
+    }
+    #about div:last-child {
+        order: -1;
+    }
+    .section-3 .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-menu.show {
+        display: flex;
+    }
+    .nav-menu.show li {
+        margin: 10px 0;
+    }
+    .hamburger {
+        display: block;
+    }
+    footer .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    footer .container div:nth-child(3) {
+        display: none;
+    }
+}
